@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+		{% block metaStuff %}
+        	<title>The Banter FC | Official Website</title>
+		{% endblock %}
+        <link href="club.css" rel="stylesheet">
+    </head>
+    <body>
+  
+    {% include "mainMenu.njk" %}
+    
+
+        {% if user and user.loggedin %}
+    <p id="CurUser">User: {{ user.firstName }} {{ user.lastName }}</p>
+{% endif %}
+        
+    <main>
+		{% block main %}{% endblock %}
+    </main>
+
+	 <footer > &copy; 2020 BANTER FC </footer>
+    </body>
+</html>

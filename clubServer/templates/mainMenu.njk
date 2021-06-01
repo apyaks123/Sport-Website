@@ -1,0 +1,42 @@
+
+
+<nav>
+{% if user.role === "guest" %}
+<ul>
+        <li><a href="./">Home</a></li>
+		<li><a href="./login">Login Page</a></li>
+		<li><a href="./membership">Membership Login</a></li>
+		<li><a href="./activity">Activity Page</a></li>
+
+</ul>
+{% endif %}
+
+{% if user.role === "member" %}
+<ul>
+        <li><a href="./">Home</a></li>
+		<li><a href="./membership">Membership Login</a></li>
+		<li><a href="./activity">Activity Page</a></li>
+		<li><a href="./MyTeam">About Us</a></li>
+		<li><a href="./AddActivity">Adding Activity</a></li>
+        <li><a href="./logout">Logout</a></li>
+
+</ul>
+{% endif %}
+
+{% if user.role === "admin" %}
+<ul>
+        <li><a href="./">Home</a></li>
+		<li><a href="./membership">Membership Login</a></li>
+		<li><a href="./activity">Activity Page</a></li>
+		<li><a href="./MyTeam">About Us</a></li>
+		<li><a href="./members">Members</a></li>
+		<li><a href="./MeMe">On Focus</a></li>
+		<li><a href="./AddActivity">Adding Activity</a></li>
+        <li><a href="./logout">Logout</a></li>
+
+</ul>
+{% endif %}
+
+
+
+</nav>

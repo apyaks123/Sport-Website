@@ -1,0 +1,102 @@
+{% extends "clubBase.njk" %}
+{% block metaStuff %}
+<title> Banter FC Official Website | Membership Page Banetrfc.com</title>
+{% endblock %}
+
+
+{% block main %}
+
+
+
+
+
+<header id="header">
+    <h1>
+        Club Membership
+    </h1>
+</header>
+
+
+
+
+    <section>
+        <div id="cont">
+            <h3>Registration Information </h3>
+            <p>Please enter your valid email and Password!</p>
+        </div>
+
+
+    </section>
+
+
+    <section>
+
+
+
+   
+
+
+    <form action="membershipSignup" method="post">
+        <fieldset>
+
+            <div>
+
+                <label for="email">Email Address** </label>
+                <input type="text" name="email" id="InTest1" required>
+
+            </div>
+
+
+            <div>
+                <label for="pass">Password* </label>
+                <input type="password" id="InTest2" name="pass" value="" required minlength="4" maxlength="8">
+
+            </div>
+
+            
+
+
+            <div>
+
+                <label for="fname">Full Name** </label>
+                <input type="text" id="InTest4" name="fname" value="" required>
+
+            </div>
+
+            <div>
+                <label for="Gender">Choose your Gender:</label>
+
+                <select name="Gender" id="gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="N/a">N/a</option>
+
+                </select>
+
+            </div>
+
+             <div>
+
+                <label for="msg">How dud you hear about us?</label>
+                <br>
+                <textarea cols="30" rows="6" id="msg" name="user_message"> </textarea>
+                
+            </div>
+
+
+
+
+
+
+
+
+            <div><button type="submit">Submit!</button></div>
+
+        </fieldset>
+    </form>
+
+
+</section>
+
+
+{% endblock %}

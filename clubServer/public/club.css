@@ -1,0 +1,179 @@
+header {
+  background-color: brown;
+  color:wheat;
+  text-align: center;
+  border-color: yellowgreen;
+  border: solid;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+ margin: 2em;
+background-color: black;
+  height: 92vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  background-color: chocolate;
+  margin-top: 50px;
+padding: 1em;
+  justify-content: space-between;
+  border-block-color: crimson;
+  border: solid 5px;
+}
+
+nav {
+ 
+  
+    position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color:  darkgray;
+  border: solid powderblue 5px;
+  justify-content: space-around;
+}
+nav ul {
+
+  display:flex;
+list-style: none;
+justify-content: space-around;
+}
+footer {
+  background-color: cornflowerblue;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left:0;
+  justify-content: space-around;
+  
+}
+#cont {
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    align-items: center;
+    background-color: darkseagreen;
+    border: solid black;
+    text-align: center;
+    margin: 1em;
+
+}
+#myForm {
+    display: grid;
+    grid-template-columns: 10em 10rem;
+
+    grid-row-gap: 0.5rem;
+    grid-column-gap: 0.5rem;
+
+    border: dashed black;
+    border-radius: 1rem;
+    padding: 1.0rem;
+    background-color: blanchedalmond;
+    
+    margin: 1em;
+
+}
+#myForm label {
+    font-family: sans-serif;
+    justify-self: end;
+
+
+}
+a:hover {
+    font-size: 40px;
+    color: darkorange;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table th {
+    text-align: left;
+    background-color: dimgrey;
+    color: yellowgreen;
+    font-family: sans-serif;
+    padding: 4px 30px 4px 8px;
+}
+
+table td {
+    border: 1px solid white;
+    background-color: brown;
+    padding: 4px 8px;
+    font-family: monospace;
+    font-size: x-large;
+
+
+}
+
+table tr:nth-child(odd) td {
+
+    background-color: bisque;
+}
+#demo {
+
+    text-align: center;
+    background-color: cadetblue;
+    border-collapse: collapse;
+    border: 1px tranparent;
+    font-family: monospace;
+    margin-top: 0.01rem;
+    color: crimson;
+    font-size: x-large;
+
+}
+
+input:valid {
+    background-color: yellowgreen;
+}
+
+
+input + span {
+    position: relative;
+}
+
+input + span::before {
+    position: absolute;
+    right: -20px;
+    top: 5px;
+}
+
+input:invalid {
+    border: 2px solid red;
+
+}
+
+input:invalid + span::before {
+    content: '✖';
+    color: red;
+}
+
+input:valid + span::before {
+    content: '✓';
+    color: green;
+    background-color: gold;
+}
+#ThanksDialog {
+
+    display: none;
+    margin: auto;
+
+    border: solid black;
+
+    border-width: 2px;
+
+
+
+
+}
+
+
+

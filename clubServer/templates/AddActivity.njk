@@ -1,0 +1,30 @@
+{% extends "clubBase.njk" %}
+
+{% block metaStuff %}
+	<title>Banter FC Official Website | Add Activity</title>
+{% endblock %}
+
+{% block main %}
+<header id="header"> <h1>Add Activity</h1> </header>
+<section>
+	<h2>Activity Creation</h2>
+	<form action="AddActivity" method="POST">
+	<fieldset>
+		<legend>Fixture Information</legend>
+	<div>
+	    <label>Competition</label>
+		<select name="tourType">
+			<option>Champions League</option>
+			<option>Carling Cup</option>
+		</select>
+	
+	
+		<label>Team</label><input type="text" name="name"/>
+		<label>Date(s)</label><input type="text" name="date" />
+		
+	</div>
+		<button type="submit">Submit</button>
+	</fieldset>
+	</form>
+</section>
+{% endblock %}

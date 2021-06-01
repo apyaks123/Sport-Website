@@ -1,0 +1,44 @@
+{% extends "clubBase.njk" %}
+{% block title %}
+    <title>Banter FC Official Website | Members Page Banetrfc.com</title>
+{% endblock %}
+
+{% block main %}
+<header id="header">
+    <h1>Banter FC Official Club Members</h1>
+	  </header>
+    <section>
+            <table>
+			
+            <tr class="c1">
+			
+			
+            <th>First Name</th>
+			<th>Last Name</th>
+            <th>Email</th>
+			<th>Role</th>
+        </tr>
+        {%for event in users %}
+
+       
+
+
+            <tr>
+
+
+			<td id= "c1">{{event.firstName}} </td>
+            <td id = "c2">{{event.lastName}} </td>
+            <td id="c3">{{event.email}}</td>
+			 <td id="c4">{{event.role}}</td>
+
+</tr>
+
+		{% endfor %}
+
+
+</table>
+	
+            
+            
+            </section>
+{% endblock %}

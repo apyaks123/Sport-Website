@@ -1,0 +1,43 @@
+
+
+
+{% extends "clubBase.njk" %}
+{% block metaStuff %}
+<title> Banter FC Official Website | Login Page Banetrfc.com</title>
+{% endblock %}
+
+
+{% block main %}
+
+
+
+
+    <header id="header">
+        <h1>
+
+            Sign Up
+
+        </h1>
+    </header>
+  
+    <section>
+
+        <form>
+         <fieldset>
+            <div >
+                <label for="email">Login Email: </label>
+                <input type="text" name="email" id="email" required >
+                </div>
+                <div>
+                <label for="email">Enter your Password: </label>
+                <input type="password" name="password" id="password" required >
+                </div>
+
+                 <div><button type="submit">Login!</button></div>
+        </fieldset>
+        </form>
+
+     
+    </section>
+
+{% endblock %}

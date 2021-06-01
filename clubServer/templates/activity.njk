@@ -1,0 +1,74 @@
+
+{% extends "clubBase.njk" %}
+{% block metaStuff %}
+<title>Banter FC Official Website | Activity Page Banetrfc.com</title>
+{% endblock %}
+
+
+{% block main %}
+
+    <header id="header">
+        <h1>
+            Club Activities
+        </h1>
+    </header>
+
+    <section>
+        <h2>
+            Main Activity
+        </h2>
+        <ul>
+            <li>Play For the <strong><em>Fans!</em></strong></li>
+            <li>Win the <strong><em>League!</em> </strong>&#129488;</li>
+            <li>Be the <strong><em>Best</em> </strong> out there everyday!</li>
+        </ul>
+        
+            
+            
+           <h3><strong>Activity site work in a Table Format. </strong></h3> 
+        
+    </section>
+
+    
+    
+    <section>
+            <table>
+            
+            
+            
+            <tr class="c1">
+            <th>Competition </th>
+            <th>Dates </th>
+            <th> Matches</th>
+            
+        </tr>
+      
+
+
+		{%for event in events.Matches %}
+
+       
+
+
+            <tr>
+
+
+			<td id= "c1">{{event.name}} </td>
+            <td id = "c2">{{event.dates}} </td>
+            <td id="c3">{{event.fixtures}}</td>
+
+</tr>
+
+		{% endfor %}
+
+
+</table>
+	
+            
+            
+            </section>
+    
+    
+
+
+{% endblock %}

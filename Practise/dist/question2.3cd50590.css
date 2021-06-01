@@ -1,0 +1,43 @@
+/* Question 2A Bean Store */
+
+body {
+    background-color: #7d9dc5;
+}
+
+main {
+    margin: 2em;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#MainDiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 0.5em;
+    margin-bottom: 0.5em;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
+
+#MainDiv h1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-self: center;
+}
+
+#MainDiv > div {
+    border: solid #7d9dc5;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+#OrderForm {    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 0.3em;
+}
+
+/*# sourceMappingURL=/question2.3cd50590.css.map */
